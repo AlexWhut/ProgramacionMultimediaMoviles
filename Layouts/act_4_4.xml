@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#cdced4">
+        <!-- El atributo useDefaultMargins no es tan efectivo aquí,
+             es mejor usar márgenes individuales en los botones. -->
+
+        <!-- Fila 1: Cuatro botones -->
+        <TableRow>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Fila 2: Un botón que ocupa 4 columnas -->
+        <TableRow>
+            <Button
+                android:layout_span="4"
+                android:background="#FFC107"
+                android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Fila 3: Dos botones, cada uno ocupando 2 columnas -->
+        <TableRow>
+            <Button
+                android:layout_span="2"
+                android:background="#FFC107"
+                android:layout_margin="2dp"/>
+            <Button
+                android:layout_span="2"
+                android:background="#FFC107"
+                android:layout_margin="2dp"/>
+        </TableRow>
+
+        <!-- Fila 4: Cuatro botones -->
+        <TableRow>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+            <Button android:background="#FFC107" android:layout_margin="2dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

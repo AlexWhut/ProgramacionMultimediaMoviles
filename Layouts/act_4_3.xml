@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/padre">
+
+    <!-- HIJO 1: Cuadro amarillo (esquina superior derecha) -->
+    <RelativeLayout
+        android:id="@+id/hijo1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="#FFEB3B" /> <!-- Color amarillo -->
+
+    <!-- HIJO 2: Cuadro naranja (a la izquierda del amarillo) -->
+    <RelativeLayout
+        android:id="@+id/hijo2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/hijo1"
+        android:background="#FF9800" /> <!-- Color naranja -->
+
+    <!-- HIJO 3: Cuadro azul claro (esquina superior izquierda) -->
+    <RelativeLayout
+        android:id="@+id/hijo3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/hijo2"
+        android:background="#81D4FA" /> <!-- Color azul claro -->
+
+    <!-- HIJO 4: Cuadro azul oscuro (esquina inferior izquierda) -->
+    <RelativeLayout
+        android:id="@+id/hijo4"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#3F51B5" /> <!-- Color azul oscuro -->
+
+    <!-- HIJO 5: Cuadro verde (el más grande, posicionado relativamente) -->
+    <RelativeLayout
+        android:id="@+id/hijo5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hijo4"
+        android:layout_below="@+id/hijo2"
+        android:layout_alignParentLeft="true"
+        android:background="#8BC34A" /> <!-- Color verde -->
+
+</RelativeLayout>

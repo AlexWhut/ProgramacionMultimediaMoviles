@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    android:background="#E0E0E0"> <!-- Un fondo gris claro para el contenedor principal -->
+
+
+    <!-- Fila Superior -->
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="left|top"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="center_horizontal|top"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="right|top"
+        android:background="#FFC107" />
+
+    <!-- Fila Central -->
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="center_vertical|left"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="center"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="center_vertical|right"
+        android:background="#FFC107" />
+
+    <!-- Fila Inferior -->
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="left|bottom"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="#FFC107" />
+
+    <FrameLayout
+        android:layout_width="@dimen/box_size"
+        android:layout_height="@dimen/box_size"
+        android:layout_gravity="right|bottom"
+        android:background="#FFC107" />
+
+</FrameLayout>
