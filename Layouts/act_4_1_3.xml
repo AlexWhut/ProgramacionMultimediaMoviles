@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"> <!-- El contenedor principal es vertical (fila de arriba, fila de abajo) -->
+
+    <!-- Fila SUPERIOR: Contiene 3 COLUMNAS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"> <!-- Su orientación es HORIZONTAL para alinear columnas -->
+
+        <!-- Columna 1 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+
+        <!-- Columna 2 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_dark" />
+
+        <!-- Columna 3 -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Fila INFERIOR: Contiene 3 FILAS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <!-- Fila 1 (de la sección inferior) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_dark" />
+
+        <!-- Fila 2 (de la sección inferior) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/white" />
+
+        <!-- Fila 3 (de la sección inferior) -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/holo_blue_bright" />
+    </LinearLayout>
+
+</LinearLayout>
