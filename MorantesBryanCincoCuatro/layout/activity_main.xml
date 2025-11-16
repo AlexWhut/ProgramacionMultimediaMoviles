@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- 1. Teclado NUMÉRICO -->
+        <EditText
+            android:id="@+id/editTextNumero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teclado numérico"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2. Teclado TELÉFONO -->
+        <EditText
+            android:id="@+id/editTextTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teclado de teléfono"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 3. Teclado TEXTO NORMAL (QWERTY) -->
+        <EditText
+            android:id="@+id/editTextTexto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teclado QWERTY"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 4. Teclado NUMÉRICO DECIMAL -->
+        <EditText
+            android:id="@+id/editTextDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Teclado numérico decimal"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
