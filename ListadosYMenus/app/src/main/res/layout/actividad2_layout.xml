@@ -22,7 +22,7 @@
         android:layout_marginTop="16dp"
         android:gravity="center"
         android:padding="10dp"
-        android:text="Ningún país seleccionado"
+        android:text="Selecciona un país"
         android:textSize="20sp"
         android:textStyle="bold"
         android:background="#E0E0E0"/>
