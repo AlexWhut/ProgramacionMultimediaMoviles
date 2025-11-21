@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_archivo"
+        android:title="Archivo"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/submenu_nuevo"
+                android:title="Nuevo" />
+            <item
+                android:id="@+id/submenu_abrir"
+                android:title="Abrir" />
+            <item
+                android:id="@+id/submenu_guardar"
+                android:title="Guardar" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_editar"
+        android:title="Editar"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/submenu_copiar"
+                android:title="Copiar" />
+            <item
+                android:id="@+id/submenu_pegar"
+                android:title="Pegar" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_ayuda"
+        android:title="Ayuda"
+        app:showAsAction="never" />
+
+</menu>
