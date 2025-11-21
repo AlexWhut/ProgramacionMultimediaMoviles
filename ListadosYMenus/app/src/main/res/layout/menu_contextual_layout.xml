@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MenuContextualActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Haz una pulsación larga sobre mí!"
+        android:textSize="18sp"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/textViewContextual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEXTO PARA MODIFICAR"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="20dp"
+        android:background="#E0E0E0"/>
+
+</LinearLayout>

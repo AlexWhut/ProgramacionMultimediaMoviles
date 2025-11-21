@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Estilo de Fuente">
+        <menu>
+            <item
+                android:id="@+id/fuente_normal"
+                android:title="Normal" />
+            <item
+                android:id="@+id/fuente_negrita"
+                android:title="Negrita" />
+            <item
+                android:id="@+id/fuente_cursiva"
+                android:title="Cursiva" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/cambiar_tamano"
+        android:title="Alternar Tamaño (Grande/Normal)" />
+
+    <item android:title="Color de Fuente">
+        <menu>
+            <item
+                android:id="@+id/color_rojo"
+                android:title="Rojo" />
+            <item
+                android:id="@+id/color_azul"
+                android:title="Azul" />
+            <item
+                android:id="@+id/color_negro"
+                android:title="Negro (Restaurar)" />
+        </menu>
+    </item>
+
+</menu>

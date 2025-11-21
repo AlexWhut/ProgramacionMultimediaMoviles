@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Importante:
+o	android:descendantFocusability="blocksDescendants":
+Lo usamos en el layout raíz para evitar que el RadioButton "robe" el clic a la fila,
+asegurando que nuestro OnItemClickListener siempre funcione.
+o	android:clickable="false" y android:focusable="false" en el RadioButton:
+Refuerzan la idea anterior. El RadioButton será solo un indicador visual;
+la lógica de selección la gestionaremos nosotros.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="8dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/imageViewVersion"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <RadioButton
+        android:id="@+id/radioButtonVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="Versión"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/opcion_a"
+        android:orderInCategory="100"
+        android:title="Opción de menú A"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/opcion_b"
+        android:orderInCategory="200"
+        android:title="Opción de menú B"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/opcion_c"
+        android:orderInCategory="300"
+        android:title="Opción de menú C"
+        app:showAsAction="never" />
+</menu>
