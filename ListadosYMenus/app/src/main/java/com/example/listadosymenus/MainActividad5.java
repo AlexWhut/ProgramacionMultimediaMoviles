@@ -36,7 +36,7 @@ public class MainActividad5 extends AppCompatActivity {
         
         // Añadimos al alumno al final
         // Usamos R.mipmap.ic_launcher como imagen genérica para el alumno
-        planetas.add(new Planeta("Alumno: Bryan Morantes", "Desarrollador Android", R.mipmap.ic_launcher, true, "https://github.com/alexwhut"));
+        planetas.add(new Planeta("Alumno: Bryan Morantes", "Desarrollador Android", R.drawable.user, true, "https://github.com/alexwhut"));
 
         // 2. Adaptador
         PlanetaAdapter adapter = new PlanetaAdapter(this, planetas);
