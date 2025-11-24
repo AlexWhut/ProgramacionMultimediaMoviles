@@ -73,14 +73,6 @@ public class MainActividad7 extends AppCompatActivity {
     private void actualizarPaneles(int position) {
         if (position >= 0 && position < datos.size()) {
             Encapsulador item = datos.get(position);
-            
-            // Ya no actualizamos título y descripción corta porque se eliminaron del layout
-            /*
-            textViewTitulo.setText(item.getTitulo());
-            String desc = item.getDescripcion();
-            String corta = desc.length() > 50 ? desc.substring(0, 50) + "..." : desc;
-            textViewDescripcionCorta.setText(corta);
-            */
 
             // Solo actualizamos la descripción larga
             textViewDescripcionLarga.setText(item.getDescripcion());
