@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".NotificacionesActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Opciones de Notificación (ID: 1)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnNotificacionPublica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Notificación (Pública)" />
+
+    <Button
+        android:id="@+id/btnNotificacionFullScreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Notificación (Heads-Up)" />
+
+    <Button
+        android:id="@+id/btnNotificacionPrivada"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Notificación (Privada)" />
+
+    <Button
+        android:id="@+id/btnNotificacionSecreta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lanzar Notificación (Secreta)" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnCancelarUna"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar Notificación (ID 1)" />
+
+    <Button
+        android:id="@+id/btnCancelarTodas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar Todas" />
+
+    <Button
+        android:id="@+id/btnPruebaSimple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="LANZAR PRUEBA SIMPLE (ID 2)"
+        android:backgroundTint="#008000" />
+
+</LinearLayout>

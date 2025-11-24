@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="OPCIONES GENERALES">
+
+        <CheckBoxPreference
+            android:key="clave1"
+            android:title="Opción con CheckBox"
+            android:summary="Activa o desactiva una característica" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="OPCIONES AVANZADAS">
+
+        <EditTextPreference
+            android:key="clave2"
+            android:title="Opción de Texto"
+            android:summary="Pulsa para introducir un valor"
+            android:dialogTitle="Introduce tu nombre" />
+
+        <ListPreference
+            android:key="clave3"
+            android:title="Opción de Lista"
+            android:summary="Selecciona un sistema operativo"
+            android:dialogTitle="Sistemas Operativos"
+            android:entries="@array/lista"
+            android:entryValues="@array/clavelista" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
