@@ -11,34 +11,26 @@ import android.widget.TextView;
 import com.example.listadosymenus.R;
 import com.example.listadosymenus.pojos.Encapsulador;
 
-import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Diferencia Clave: BaseAdapter tiene un método getDropDownView() que es llamado específicamente
- * para renderizar las vistas en la lista desplegable del Spinner. En este caso, como queremos
- * que la vista cerrada y la del desplegable se vean igual, hemos creado un método auxiliar
- * createItemView que es llamado por ambos, getView() y getDropDownView().
- */
 public class VersionAdapterSpinner extends BaseAdapter {
 
     private Context context;
-    private ArrayList<Encapsulador> datos;
-    private LayoutInflater inflater;
+    private List<Encapsulador> listaVersiones;
 
-    public VersionAdapterSpinner(Context context, ArrayList<Encapsulador> datos) {
+    public VersionAdapterSpinner(Context context, List<Encapsulador> listaVersiones) {
         this.context = context;
-        this.datos = datos;
-        this.inflater = LayoutInflater.from(context);
+        this.listaVersiones = listaVersiones;
     }
 
     @Override
     public int getCount() {
-        return datos.size();
+        return listaVersiones.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return datos.get(position);
+        return listaVersiones.get(position);
     }
 
     @Override
@@ -46,48 +38,33 @@ public class VersionAdapterSpinner extends BaseAdapter {
         return position;
     }
 
-    /**
-     * Este método se usa para la vista del Spinner cuando está "cerrado".
-     * Podemos usar el mismo layout que el desplegable para simplificar.
-     */
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        return createItemView(position, convertView, parent);
-    }
-
-    /**
-     * Este método se usa para cada elemento de la lista desplegable.
-     */
-    @Override
-    public View getDropDownView(int position, View convertView, ViewGroup parent) {
-        return createItemView(position, convertView, parent);
-    }
-
-    /**
-     * Método auxiliar para crear las vistas, ya que son idénticas en nuestro caso.
-     */
-    private View createItemView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
+
         if (convertView == null) {
-            convertView = inflater.inflate(R.layout.spinner_dropdown_item, parent, false);
+            // Usamos el layout simple sin RadioButton
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item_version_simple, parent, false);
             holder = new ViewHolder();
             holder.imagen = convertView.findViewById(R.id.imageViewVersion);
-            holder.texto = convertView.findViewById(R.id.textViewVersion);
+            holder.nombre = convertView.findViewById(R.id.textViewVersion);
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        Encapsulador versionActual = datos.get(position);
-        holder.imagen.setImageResource(versionActual.getIdImagen());
-        holder.texto.setText(versionActual.getTitulo());
+        // Obtener el objeto de datos para la posición actual
+        Encapsulador versionActual = listaVersiones.get(position);
 
+        // Asignar los valores a las vistas
+        holder.imagen.setImageResource(versionActual.getIdImagen());
+        holder.nombre.setText(versionActual.getTitulo());
+        
         return convertView;
     }
 
-    private static class ViewHolder {
+    static class ViewHolder {
         ImageView imagen;
-        TextView texto;
+        TextView nombre;
     }
 }
-

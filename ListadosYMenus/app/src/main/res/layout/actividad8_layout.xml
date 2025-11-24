@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActividad8">
+    android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
@@ -13,39 +11,36 @@
         android:text="Selecciona una versión de Android:"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="10dp"/>
 
     <Spinner
         android:id="@+id/spinnerVersiones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown"
-        android:padding="8dp"/>
+        android:padding="5dp"
+        android:background="#F0F0F0"
+        android:layout_marginBottom="20dp"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        android:background="#ECEFF1">
+        android:text="Descripción:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textViewTituloDetalle"
-            android:layout_width="wrap_content"
+            android:id="@+id/textViewDescripcionLarga"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SELECCIONE UNA VERSIÓN"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#004D40"/>
-
-        <TextView
-            android:id="@+id/textViewDescripcionDetalle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Los detalles de la versión seleccionada aparecerán aquí."
-            android:textSize="16sp"/>
-    </LinearLayout>
+            android:text="Descripción de la versión..."
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:background="#E8EAF6"/>
+    </ScrollView>
 
 </LinearLayout>
