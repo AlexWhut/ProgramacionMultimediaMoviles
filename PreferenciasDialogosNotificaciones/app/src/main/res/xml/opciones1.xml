@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Ajustes de búsqueda">
+        <CheckBoxPreference
+            android:key="opcion1"
+            android:title="Opción de búsqueda 1"
+            android:summary="Activar búsqueda segura"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="opcion2"
+            android:title="Opción de búsqueda 2"
+            android:summary="Guardar historial"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="opcion3"
+            android:title="Opción de búsqueda 3"
+            android:summary="Sugerencias automáticas"
+            android:defaultValue="true" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Versión de Android">
+        <!-- Aquí usamos los arrays que definiste en tu strings.xml -->
+        <ListPreference
+            android:key="version_android"
+            android:title="Selecciona versión"
+            android:summary="Elige tu versión favorita"
+            android:entries="@array/versiones_nombres"
+            android:entryValues="@array/versiones_valores"
+            android:defaultValue="11" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

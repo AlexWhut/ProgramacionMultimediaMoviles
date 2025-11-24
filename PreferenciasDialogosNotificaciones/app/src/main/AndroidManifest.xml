@@ -2,69 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="@string/bottom_sheet_behavior"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.PreferenciasDialogosNotificaciones">
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--EJEMPLO PREFERENCIAS -->
-        <activity
-            android:name=".PreferenciasActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--EJEMPLO PREFERENCIAS -->
-        <activity android:name=".OpcionesPreferencias" />
-        <!--ACTIVIDAD 1 -->
+        android:theme="@style/Theme.PreferenciasDialogosNotificaciones"
+        tools:targetApi="31">
+
+        <!-- Definir MainActividad1 como la principal (LAUNCHER) -->
         <activity
             android:name=".MainActividad1"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.action.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--ACTIVIDAD 1 -->
-        <activity
-            android:name=".PreferenciasAppActivity"
-            android:label="PROGRAMACIÓN MULTIMEDIA" />
-        <!--EJEMPLO TOAST -->
-        <activity
-            android:name=".ToastActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--ACTIVIDAD 2 -->
-        <activity
-            android:name=".MainActividad2"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--EJEMPLO DIALOGO -->
-        <activity
-            android:name=".DialogoActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -72,39 +23,12 @@
             </intent-filter>
         </activity>
 
-        <!--ACTIVIDAD 4 -->
-        <activity
-            android:name=".MainActividad4"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <!--EJEMPLO NOTIFICACIONES -->
-        <activity
-            android:name=".NotificacionesActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Segunda"
-            android:parentActivityName=".NotificacionesActivity">
-            <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".NotificacionesActivity" />
-        </activity>
-        <!--ACTIVIDAD 5 -->
-        <activity
-            android:name=".MainActividad5" android:exported="true"
-            android:parentActivityName=".NotificacionesActivity">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".NotificacionesActivity" />
-        </activity>
+        <!-- Registrar la actividad de preferencias -->
+        <activity android:name=".PreferenciasAppActivity" android:exported="false" />
+
+        <!-- Si tenías una MainActivity antigua, quítale el intent-filter de LAUNCHER -->
+        <activity android:name=".MainActivity" android:exported="false"/>
+
     </application>
 
 </manifest>
