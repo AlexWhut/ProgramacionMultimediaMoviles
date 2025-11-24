@@ -52,6 +52,10 @@
         <activity
             android:name=".MainActividad8"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".MainActividad9"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -72,10 +76,6 @@
         </activity>
         <activity
             android:name=".MenuContextualEnListaActivity"
-            android:exported="true">
-        </activity>
-        <activity
-            android:name=".MainActividad9"
             android:exported="true">
         </activity>
     </application>
