@@ -2,23 +2,23 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="10dp"
-    android:gravity="center_vertical">
+    android:gravity="center">
 
     <ImageView
         android:id="@+id/imageViewVersion"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@mipmap/ic_launcher"
-        android:layout_marginEnd="10dp"/>
+        android:layout_marginBottom="5dp"/>
 
     <RadioButton
         android:id="@+id/radioButtonVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Versión Android"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:clickable="false"
         android:focusable="false"/>
 
