@@ -12,35 +12,31 @@ import android.widget.TextView;
 import com.example.listadosymenus.R;
 import com.example.listadosymenus.pojos.Encapsulador;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class VersionAdapter extends BaseAdapter {
 
     private Context context;
-    private ArrayList<Encapsulador> datos;
-    private LayoutInflater inflater;
+    private List<Encapsulador> listaVersiones;
 
-    public VersionAdapter(Context context, ArrayList<Encapsulador> datos) {
+    public VersionAdapter(Context context, List<Encapsulador> listaVersiones) {
         this.context = context;
-        this.datos = datos;
-        this.inflater = LayoutInflater.from(context);
+        this.listaVersiones = listaVersiones;
     }
 
     @Override
     public int getCount() {
-        return datos.size(); // Devuelve el número total de elementos
+        return listaVersiones.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return datos.get(position); // Devuelve el objeto en una posición
+        return listaVersiones.get(position);
     }
-
-
 
     @Override
     public long getItemId(int position) {
-        return position; // Devuelve un ID único para la fila
+        return position;
     }
 
     @Override
@@ -48,34 +44,33 @@ public class VersionAdapter extends BaseAdapter {
         ViewHolder holder;
 
         if (convertView == null) {
-            // Si la vista es nueva, la "inflamos" (creamos) a partir de nuestro XML
-            convertView = inflater.inflate(R.layout.list_item_version, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item_version, parent, false);
             holder = new ViewHolder();
             holder.imagen = convertView.findViewById(R.id.imageViewVersion);
             holder.radioButton = convertView.findViewById(R.id.radioButtonVersion);
-            convertView.setTag(holder); // Guardamos el holder para reutilizarlo
+            convertView.setTag(holder);
         } else {
-            // Si la vista se está reciclando, recuperamos el holder
             holder = (ViewHolder) convertView.getTag();
         }
 
-        // Obtenemos el objeto actual
-        Encapsulador versionActual = datos.get(position);
+        // Obtener el objeto de datos para la posición actual
+        Encapsulador versionActual = listaVersiones.get(position);
 
-        // Volcamos los datos en las vistas
+        // Asignar los valores a las vistas
         holder.imagen.setImageResource(versionActual.getIdImagen());
         holder.radioButton.setText(versionActual.getTitulo());
-
-        // La clave: el estado del RadioButton depende del estado del objeto de datos
+        
+        // Control del estado del RadioButton
+        // IMPORTANTE: Desactivamos el listener o lo hacemos no clickable para que sea la fila quien maneje el evento
         holder.radioButton.setChecked(versionActual.isSeleccionado());
+        holder.radioButton.setClickable(false);
+        holder.radioButton.setFocusable(false);
 
         return convertView;
     }
 
-    // Patrón ViewHolder para un rendimiento óptimo
-    private static class ViewHolder {
+    static class ViewHolder {
         ImageView imagen;
         RadioButton radioButton;
     }
 }
-
