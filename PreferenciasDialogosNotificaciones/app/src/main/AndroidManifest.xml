@@ -24,7 +24,9 @@
         </activity>
 
         <!-- Registrar la actividad de preferencias -->
-        <activity android:name=".PreferenciasAppActivity" android:exported="false" />
+        <activity android:name=".PreferenciasAppActivity" android:exported="false"
+            android:label="PREFERENCIAS"
+            android:parentActivityName=".MainActividad1"/>
 
         <!-- Si tenías una MainActivity antigua, quítale el intent-filter de LAUNCHER -->
         <activity android:name=".MainActivity" android:exported="false"/>
