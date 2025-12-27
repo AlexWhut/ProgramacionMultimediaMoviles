@@ -157,7 +157,7 @@ public class MainActividad4 extends AppCompatActivity implements View.OnClickLis
         // 2. Inflar el layout (layout_toast.xml) que creamos en el Paso 2
         // R.id.toast_root es el ID del LinearLayout raíz en layout_toast.xml
         View layout = inflater.inflate(R.layout.layout_toast,
-                findViewById(R.id.toast_root));
+            findViewById(R.id.toast_root));
 
         // 3. Encontrar el TextView dentro de nuestro layout inflado
         TextView tvMensaje = layout.findViewById(R.id.tvToastMensaje);
@@ -167,7 +167,7 @@ public class MainActividad4 extends AppCompatActivity implements View.OnClickLis
 
         // 5. Crear y configurar el Toast
         Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER_VERTICAL, 0, 0); // Posición (opcional)
+        toast.setGravity(Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL, 0, 80); // Abajo, centrado horizontalmente, con margen
         toast.setDuration(Toast.LENGTH_LONG); // Duración
         toast.setView(layout); // ¡Asignamos nuestro layout!
 

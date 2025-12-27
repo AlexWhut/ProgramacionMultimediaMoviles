@@ -15,15 +15,21 @@
 
 
 
-        <!-- Definir MainActividad3 como la principal (LAUNCHER) -->
+
+        <!-- Definir MainActividad4 como la principal (LAUNCHER) -->
         <activity
-            android:name=".MainActividad3"
+            android:name=".MainActividad4"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActividad3 ya no es principal -->
+        <activity
+            android:name=".MainActividad3"
+            android:exported="true" />
 
         <!-- MainActividad2 ya no es principal -->
         <activity
