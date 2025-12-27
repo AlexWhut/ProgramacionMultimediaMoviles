@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.preferenciasdialogosnotificaciones">
+
+    <!-- Permiso para notificaciones (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -16,15 +20,21 @@
 
 
 
-        <!-- Definir MainActividad4 como la principal (LAUNCHER) -->
+
+        <!-- Definir MainActividad5 como la principal (LAUNCHER) -->
         <activity
-            android:name=".MainActividad4"
+            android:name=".MainActividad5"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActividad4 ya no es principal -->
+        <activity
+            android:name=".MainActividad4"
+            android:exported="true" />
 
         <!-- MainActividad3 ya no es principal -->
         <activity
