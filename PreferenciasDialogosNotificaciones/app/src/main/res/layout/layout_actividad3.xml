@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light"
+    android:padding="20dp"
+    tools:context=".MainActividad3">
+
+    <!-- Encabezado -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="@color/teal_200">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="PROGRAMACIÓN MULTIMEDIA"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Resultado -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text=""
+        android:enabled="false"
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/button_light"
+        android:textColor="@android:color/black"
+        app:cornerRadius="24dp"
+        android:elevation="2dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Botón para mostrar diálogo -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMostrarDialogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MUESTRA DIÁLOGO"
+        style="@style/Widget.MaterialComponents.Button"
+        android:backgroundTint="@color/button_light"
+        android:textColor="@android:color/black"
+        app:cornerRadius="24dp"
+        android:elevation="2dp" />
+
+</LinearLayout>
