@@ -1,24 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp"
-    tools:context=".MainActividad4">
+    android:background="#F8F6FF">
+
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PROGRAMACIÓN MULTIMEDIA"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp"
+        android:textColor="#333" />
+
+    <!-- Espaciador para bajar los botones y evitar superposición con los diálogos -->
+
+
 
     <Button
         android:id="@+id/btnMostrarFecha"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Seleccionar Fecha" />
+        android:text="Seleccionar Fecha"
+        android:backgroundTint="#8B5CF6"
+        android:textColor="#fff"
+        android:layout_marginBottom="24dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"/>
 
     <Button
         android:id="@+id/btnMostrarHora"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Seleccionar Hora" />
+        android:text="Seleccionar Hora"
+        android:backgroundTint="#8B5CF6"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:padding="12dp"/>
+
+    <View
+        android:padding="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
 
 </LinearLayout>
