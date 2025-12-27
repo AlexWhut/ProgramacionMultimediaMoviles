@@ -31,13 +31,26 @@ public class MainActividad1 extends AppCompatActivity {
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(MainActividad1.this);
 
             boolean op1 = prefs.getBoolean("opcion1", false);
-            boolean op2 = prefs.getBoolean("opcion2", false);
+            String sistemaOperativo = prefs.getString("sistema_operativo", "android"); // valor por defecto
             boolean op3 = prefs.getBoolean("opcion3", false);
             String version = prefs.getString("version_android", "No definida");
 
+            // Mostrar el nombre legible del sistema operativo
+            String sistemaOperativoTexto;
+            switch (sistemaOperativo) {
+                case "ios":
+                    sistemaOperativoTexto = "iOS";
+                    break;
+                case "windows_phone":
+                    sistemaOperativoTexto = "Windows Phone";
+                    break;
+                default:
+                    sistemaOperativoTexto = "Android";
+            }
+
             Log.d("MIS_PREFERENCIAS", "---- Valores ----");
             Log.d("MIS_PREFERENCIAS", "Opción 1: " + op1);
-            Log.d("MIS_PREFERENCIAS", "Opción 2: " + op2);
+            Log.d("MIS_PREFERENCIAS", "Sistema Operativo: " + sistemaOperativoTexto);
             Log.d("MIS_PREFERENCIAS", "Opción 3: " + op3);
             Log.d("MIS_PREFERENCIAS", "Versión: " + version);
 

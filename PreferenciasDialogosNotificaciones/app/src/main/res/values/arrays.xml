@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Arrays para el archivo opciones.xml -->
+    <string-array name="lista">
+        <!-- Coloca aquí los textos que verá el usuario. Ejemplo: -->
+        <item>Opción 1</item>
+        <item>Opción 2</item>
+        <item>Opción 3</item>
+    </string-array>
+
+    <string-array name="clavelista">
+        <!-- Coloca aquí los valores que se guardarán. Ejemplo: -->
+        <item>opcion_1_val</item>
+        <item>opcion_2_val</item>
+        <item>opcion_3_val</item>
+    </string-array>
+
+
+    <!-- Arrays para el archivo opciones1.xml -->
+    <string-array name="versiones_nombres">
+        <!-- Ejemplo de nombres de versiones -->
+        <item>Android 11 (Red Velvet Cake)</item>
+        <item>Android 12 (Snow Cone)</item>
+        <item>Android 13 (Tiramisu)</item>
+    </string-array>
+
+    <string-array name="versiones_valores">
+        <!-- Ejemplo de valores para las versiones -->
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+    </string-array>
+
+        <!-- Arrays requeridos por preferencias_app.xml -->
+        <string-array name="sistemas_operativos">
+            <item>Android</item>
+            <item>iOS</item>
+            <item>Windows Phone</item>
+        </string-array>
+        <string-array name="sistemas_operativos_values">
+            <item>android</item>
+            <item>ios</item>
+            <item>windows_phone</item>
+        </string-array>
+
+    </resources>
