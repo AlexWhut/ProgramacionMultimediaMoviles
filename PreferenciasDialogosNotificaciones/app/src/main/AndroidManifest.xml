@@ -14,15 +14,21 @@
         tools:targetApi="31">
 
 
-        <!-- Definir MainActividad2 como la principal (LAUNCHER) -->
+
+        <!-- Definir MainActividad3 como la principal (LAUNCHER) -->
         <activity
-            android:name=".MainActividad2"
+            android:name=".MainActividad3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- MainActividad2 ya no es principal -->
+        <activity
+            android:name=".MainActividad2"
+            android:exported="true" />
 
         <!-- MainActividad1 ya no es principal -->
         <activity
