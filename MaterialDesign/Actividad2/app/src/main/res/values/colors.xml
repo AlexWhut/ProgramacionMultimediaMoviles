@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Personalización: Colores personalizados para la app -->
+    <color name="mi_azul_primario">#0059B3</color>
+    <color name="mi_blanco_puro">#FFFFFF</color>
+    <color name="mi_azul_container">#D6E3FF</color>
+    <color name="mi_azul_oscuro_texto">#001C3B</color>
+</resources>

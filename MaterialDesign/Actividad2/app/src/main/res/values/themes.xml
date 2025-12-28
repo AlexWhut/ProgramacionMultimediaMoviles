@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+
+    <!-- Personalización: Aplicando colores personalizados para Material Design 3 -->
+    <style name="Base.Theme.MaterialDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/mi_azul_primario</item>
+        <item name="colorOnPrimary">@color/mi_blanco_puro</item>
+        <item name="colorPrimaryContainer">@color/mi_azul_container</item>
+        <item name="colorOnPrimaryContainer">@color/mi_azul_oscuro_texto</item>
+        <item name="colorSecondary">@color/mi_azul_primario</item>
+        <item name="colorOnSecondary">@color/mi_blanco_puro</item>
+    </style>
+
+    <!-- Personalización: El tema principal hereda de Base.Theme.MaterialDesign -->
+    <style name="Theme.MaterialDesign" parent="Base.Theme.MaterialDesign" />
+
+    <!-- Mantener compatibilidad con el nombre anterior -->
+    <style name="Base.Theme.Activity2" parent="Base.Theme.MaterialDesign" />
+    <style name="Theme.Activity2" parent="Base.Theme.Activity2" />
+</resources>
