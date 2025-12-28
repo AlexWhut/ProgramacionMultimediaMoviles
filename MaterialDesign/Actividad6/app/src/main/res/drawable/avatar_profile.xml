@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <!-- Avatar simple: círculo azul con inicial -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M40,8a32,32 0 1,0 0,64a32,32 0 1,0 0,-64z"/>
+    <group>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M30,55h20v-5c0,-5.5 -9,-8.5 -10,-8.5s-10,3 -10,8.5v5z"/>
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M40,40a8,8 0 1,0 0,-16a8,8 0 1,0 0,16z"/>
+    </group>
+</vector>
