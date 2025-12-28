@@ -1,0 +1,9 @@
+<resources>
+    <string name="leonardo">LEONARDO</string>
+    <string name="miguel_angel">MIGUEL ANGEL</string>
+    <string name="bernini">BERNINI</string>
+    <string name="rafael">RAFAEL</string>
+    <string name="sabinas">LAS SABINAS</string>
+    <string name="hilanderas">LAS HILANDERAS</string>
+    <string name="app_name">Actividad4</string>
+</resources>

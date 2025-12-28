@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:columnCount="2">
+
+            <!-- FILA 0 -->
+            <ImageView
+                android:src="@drawable/leonardo"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_row="0"
+                app:layout_column="0"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:text="@string/leonardo"
+                android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                app:layout_row="0"
+                app:layout_column="1" />
+
+            <!-- FILA 1 -->
+            <ImageView
+                android:src="@drawable/miguel_angel"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_row="1"
+                app:layout_column="0"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:text="@string/miguel_angel"
+                android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                app:layout_row="1"
+                app:layout_column="1" />
+
+            <!-- FILA 2 -->
+            <ImageView
+                android:src="@drawable/bernini"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_row="2"
+                app:layout_column="0"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:text="@string/bernini"
+                android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                app:layout_row="2"
+                app:layout_column="1" />
+
+            <!-- FILA 3 -->
+            <ImageView
+                android:src="@drawable/rafael"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:scaleType="centerCrop"
+                app:layout_row="3"
+                app:layout_column="0"
+                app:layout_columnWeight="1" />
+
+            <TextView
+                android:text="@string/rafael"
+                android:padding="16dp"
+                android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+                app:layout_row="3"
+                app:layout_column="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>
