@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <!-- Personalización: Colores para modo oscuro -->
+    <style name="Base.Theme.MaterialDesign" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#A8C7FF</item>
+        <item name="colorOnPrimary">#003062</item>
+        <item name="colorPrimaryContainer">#004788</item>
+        <item name="colorOnPrimaryContainer">#D6E3FF</item>
+    </style>
+
+    <style name="Theme.MaterialDesign" parent="Base.Theme.MaterialDesign" />
+    <style name="Base.Theme.Activity2" parent="Base.Theme.MaterialDesign" />
+    <style name="Theme.Activity2" parent="Base.Theme.Activity2" />
+</resources>

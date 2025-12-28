@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Activity2</string>
+    <!-- Personalización: Título para la barra superior -->
+    <string name="titulo_programacion">PROGRAMACIÓN MULTIMEDIA</string>
+</resources>
