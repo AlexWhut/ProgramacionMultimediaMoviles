@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_biografia"
+            android:icon="@drawable/ic_menu_biografia"
+            android:title="BIOGRAFÍA" />
+        <item
+            android:id="@+id/nav_escultura"
+            android:icon="@drawable/ic_menu_escultura"
+            android:title="ESCULTURA" />
+        <item
+            android:id="@+id/nav_pintura"
+            android:icon="@drawable/ic_menu_pintura"
+            android:title="PINTURA" />
+    </group>
+    <item android:title="OPCIONES">
+        <menu>
+            <item
+                android:id="@+id/nav_ayuda"
+                android:icon="@drawable/ic_menu_ayuda"
+                android:title="AYUDA" />
+            <item
+                android:id="@+id/nav_salida"
+                android:icon="@drawable/ic_menu_salida"
+                android:title="SALIDA" />
+        </menu>
+    </item>
+</menu>
