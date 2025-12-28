@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Actividad3</string>
+    <!-- Personalización: Título para MainActividad3 -->
+    <string name="titulo_programacion">PROGRAMACIÓN MULTIMEDIA</string>
+</resources>

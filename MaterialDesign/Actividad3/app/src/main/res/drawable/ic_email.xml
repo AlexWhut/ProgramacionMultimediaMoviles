@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Personalización: color azul -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M20,4H4c-1.1,0-2,0.9-2,2v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6c0-1.1-0.9-2-2-2zm0,2v0.01L12,13L4,6.01V6h16zM4,18V8.99l8,7.99l8-7.99V18H4z"/>
+</vector>
+<!-- Comentario: Este es el icono de email personalizado en azul. Archivo: ic_email.xml -->
