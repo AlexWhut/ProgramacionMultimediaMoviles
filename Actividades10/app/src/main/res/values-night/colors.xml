@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1976D2</color>
+    <color name="colorPrimaryVariant">#1565C0</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#90CAF9</color>
+    <color name="colorOnSecondary">#212121</color>
+    <color name="background">#121A26</color>
+    <color name="surface">#1E2738</color>
+    <color name="onBackground">#FFFFFF</color>
+    <color name="onSurface">#E3E3E3</color>
+    <color name="buttonBackground">#E3EAFD</color>
+    <color name="buttonText">#1A237E</color>
+    <color name="editTextBackground">#232F3E</color>
+    <color name="editTextText">#FFFFFF</color>
+    <color name="divider">#374151</color>
+</resources>
