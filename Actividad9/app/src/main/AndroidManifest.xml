@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Actividad_9_3">
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity95"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
