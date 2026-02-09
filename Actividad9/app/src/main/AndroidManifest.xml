@@ -16,6 +16,9 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity95"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity96"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
