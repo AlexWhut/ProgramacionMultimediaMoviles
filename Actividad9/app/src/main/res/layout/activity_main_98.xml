@@ -3,20 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF3E0">
+    android:background="@drawable/bg_gradient_orange">
 
     <TextView
         android:id="@+id/textViewTimer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00:00"
-        android:textSize="48sp"
-        android:textColor="#212121"
+        android:textSize="56sp"
+        android:textColor="#BF360C"
         android:textStyle="bold"
+        android:elevation="8dp"
+        android:shadowColor="#FFAB91"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="120dp" />
+        android:layout_marginTop="100dp" />
 
     <LinearLayout
         android:id="@+id/buttonLayout"
@@ -26,14 +31,17 @@
         app:layout_constraintTop_toBottomOf="@id/textViewTimer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp">
+        android:layout_marginTop="48dp"
+        android:gravity="center">
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonStart"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Iniciar"
-            android:backgroundTint="#7C4DFF"
+            android:icon="@android:drawable/ic_media_play"
+            app:iconPadding="8dp"
+            android:backgroundTint="#FF7043"
             android:textColor="#FFFFFF"
             android:layout_marginEnd="16dp"
             app:cornerRadius="32dp"
@@ -41,14 +49,17 @@
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
             android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:paddingBottom="12dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonPause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Pausar"
-            android:backgroundTint="#7C4DFF"
+            android:icon="@android:drawable/ic_media_pause"
+            app:iconPadding="8dp"
+            android:backgroundTint="#FF7043"
             android:textColor="#FFFFFF"
             android:layout_marginEnd="16dp"
             app:cornerRadius="32dp"
@@ -56,21 +67,25 @@
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
             android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:paddingBottom="12dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/buttonReset"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reiniciar"
-            android:backgroundTint="#7C4DFF"
+            android:icon="@android:drawable/ic_menu_revert"
+            app:iconPadding="8dp"
+            android:backgroundTint="#FF7043"
             android:textColor="#FFFFFF"
             app:cornerRadius="32dp"
             android:elevation="4dp"
             android:paddingLeft="32dp"
             android:paddingRight="32dp"
             android:paddingTop="12dp"
-            android:paddingBottom="12dp" />
+            android:paddingBottom="12dp"
+            android:foreground="?attr/selectableItemBackgroundBorderless" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
