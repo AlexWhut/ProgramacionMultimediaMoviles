@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Control de SoundPool"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/tvLabelVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Volumen: 1.0"
+        android:textColor="@color/white"/>
+
+    <SeekBar
+        android:id="@+id/sbVolumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/tvLabelRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Velocidad (Rate): 1.0x"
+        android:textColor="@color/white"/>
+
+    <SeekBar
+        android:id="@+id/sbRate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="200"
+        android:progress="100"
+        android:layout_marginBottom="40dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:id="@+id/btnSonido1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efecto 1"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/darkBlue"/>
+        <Button
+            android:id="@+id/btnSonido2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efecto 2"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/darkBlue"/>
+    </LinearLayout>
+</LinearLayout>
