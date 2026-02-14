@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/darkBlue">
+
+    <ImageView
+        android:id="@+id/ivPanoramica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:contentDescription="Imagen panorámica del lago Yamanaka" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lago Yamanaka (Wikimedia)"
+        android:textColor="@color/white"
+        android:paddingTop="10dp"/>
+
+</LinearLayout>
