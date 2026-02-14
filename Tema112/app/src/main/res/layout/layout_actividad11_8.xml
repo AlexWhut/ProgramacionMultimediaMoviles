@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rastreador de Ubicación"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <Switch
+        android:id="@+id/switchProveedor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usar GPS (alta precisión)" 
+        android:textColor="@color/white"
+        android:checked="false"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:id="@+id/lblLatitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Latitud: Esperando..."
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_input_rounded"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/lblLongitud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Longitud: Esperando..."
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_input_rounded"
+        android:padding="15dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:id="@+id/lblPrecision"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Precisión: --"
+        android:textSize="14sp"
+        android:textColor="#B0B8C1"
+        android:background="@drawable/bg_input_rounded"
+        android:gravity="center_horizontal"/>
+
+</LinearLayout>
