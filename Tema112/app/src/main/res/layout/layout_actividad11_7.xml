@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center_horizontal"
+    android:background="@color/darkBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monitor de Sensores"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnAcelerometro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activar Acelerómetro"
+        android:backgroundTint="#2196F3"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnGiroscopio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Activar Giroscopio"
+        android:backgroundTint="#4CAF50"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/btnLuz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Activar Sensor de Luz"
+        android:backgroundTint="#FFC107"
+        android:textColor="#212121"/>
+
+    <Button
+        android:id="@+id/btnDetener"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="DETENER TODO"
+        android:textColor="@color/white"
+        android:backgroundTint="#F44336"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/txtValores"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:text="Selecciona un sensor para comenzar..."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="#263445"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
