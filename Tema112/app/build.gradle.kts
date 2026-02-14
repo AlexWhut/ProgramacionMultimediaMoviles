@@ -41,6 +41,9 @@ dependencies {
     // Glide para carga eficiente de imágenes desde internet
     implementation("com.github.bumptech.glide:glide:4.15.1")
     annotationProcessor("com.github.bumptech.glide:compiler:4.15.1")
+
+    // Google Maps para actividad 11.9
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
